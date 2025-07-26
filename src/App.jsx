@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Github, Linkedin, Download, Sparkles, Send, Code, Database, Wind, GitBranch, Bot, Tv, Palette, PenTool } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+
 // --- Helper Components & Data ---
 
 const LeetCodeIcon = () => (
@@ -148,8 +149,8 @@ const ContactForm = () => {
         
         let chatHistory = [{ role: "user", parts: [{ text: prompt }] }];
         const payload = { contents: chatHistory };
-        const apiKey = ""; // This will be handled by the environment, no need for process.env
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+        const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // This will be handled by the environment, no need for process.env
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
         try {
             const response = await fetch(apiUrl, {
@@ -181,7 +182,7 @@ const ContactForm = () => {
         setStatus({ text: 'Sending...', type: 'info' });
 
         try {
-            data.append("access_key", "YOUR_ACCESS_KEY_HERE");
+            data.append("access_key", "00f92614-e01c-4596-b25a-f78c5b7a7b1e");
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 body: data,
@@ -290,8 +291,8 @@ const InteractiveLog = ({ portfolioData }) => {
         chatHistory.unshift({ role: 'user', parts: [{ text: systemPrompt }]});
 
         const payload = { contents: chatHistory };
-        const apiKey = ""; // This will be handled by the environment, no need for process.env
-        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+        const apiKey = import.meta.env.VITE_GEMINI_API_KEY; // This will be handled by the environment, no need for process.env
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
         try {
             const response = await fetch(apiUrl, {
