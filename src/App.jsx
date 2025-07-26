@@ -178,7 +178,7 @@ const ContactForm = () => {
         const form = e.target;
         const data = new FormData(form);
         data.set('message', message);
-        data.append('ai_generated', wasAiUsed ? 'Yes' : 'No');
+        
         
         setStatus({ text: 'Sending...', type: 'info' });
 
