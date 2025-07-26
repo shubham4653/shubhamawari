@@ -439,12 +439,19 @@ const App = () => {
         <main className="min-h-screen h-screen overflow-hidden font-sans relative bg-[#16181d]">
             <SkillsCarousel />
             <div className="absolute inset-0 z-10 p-4 md:p-8 flex flex-col justify-between">
-                <header>
-                    <h1 className="text-3xl md:text-4xl font-bold text-white">Shubham Awari</h1>
-                    <p className="text-base md:text-lg text-blue-400 font-fira mt-1">
-                        <span className="text-purple-400">const</span> <span>ROLE</span> = <span className="text-amber-400">'CSE Student'</span>;
+                <header className="text-center mt-16">
+                    <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500">
+                        Shubham Awari
+                    </h1>
+                    <p className="mt-4 text-lg md:text-xl font-mono text-gray-300">
+                        <span className="text-blue-400">const</span>{' '}
+                        <span className="text-white">role</span> ={' '}
+                        <span className="text-amber-400">"CSE Student"</span>
+                        <span className="text-white">;</span>
                     </p>
                 </header>
+
+
 
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-gray-700 pointer-events-none">
                     <p className="font-fira text-sm">// Main module</p>
