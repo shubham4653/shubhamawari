@@ -458,7 +458,7 @@ const App = () => {
                     <button onClick={() => togglePanel('skills')} className={navButtonClasses}><span>&gt;&gt;</span> <span>skills.config</span></button>
                     <button onClick={() => togglePanel('contact')} className={navButtonClasses}><span>&gt;&gt;</span> <span>contact.ts</span></button>
                     <button onClick={() => togglePanel('status')} className={navButtonClasses}><span>&gt;&gt;</span> <span className="flex items-center">status.log <Sparkles className="ml-2 text-purple-400" size={16}/></span></button>
-                    <a href="https://github.com/shubham4653/shubhamawari/blob/main/src/resume.pdf" download="ShubhamAwari_Resume.pdf" className={navButtonClasses}><Download size={16} /> <span>resume.pdf</span></a>
+                    <a href="/resume.pdf" download="ShubhamAwari_Resume.pdf" className={navButtonClasses}><Download size={16} /> <span>resume.pdf</span></a>
                    </div>
                 </nav>
 
