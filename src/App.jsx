@@ -10,7 +10,7 @@ const LeetCodeIcon = () => (
 );
 
 const projects = [
-    { id: 'proj1', title: "face_gender_age.js", description: "Real-time face, gender, and age detection using webcam input and modern JavaScript.", link: "https://github.com/shubham4653/facegenderage" },
+    { id: 'proj1', title: "portfolio.js", description: "A modern portfolio website built with React, showcasing my projects and skills.Integrated with an AI chatbot to enhance user interaction and support.", link: "https://github.com/shubham4653/shubhamawari" },
     { id: 'proj2', title: "carsonly_website.html", description: "A sleek, static car gallery website built with pure HTML and CSS, focusing on clean UI/UX.", link: "https://github.com/shubham4653/CarsOnly-Website" },
     { id: 'proj3', title: "the_quest.js", description: "An interactive web-based game showcasing dynamic JavaScript and user interaction.", link: "https://github.com/shubham4653/thequest" },
 ];
