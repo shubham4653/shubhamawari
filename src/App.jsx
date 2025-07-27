@@ -20,13 +20,15 @@ const skills = [
     { name: 'React', icon: <Code size={48}/> },
     { name: 'JavaScript', icon: <Code size={48}/> },
     { name: 'Python', icon: <Database size={48}/> },
-    { name: 'Node.js', icon: <Code size={48}/> },
+    { name: 'React', icon: <Code size={48}/> },
+    { name: 'Express', icon: <Code size={48}/> },
     { name: 'HTML5', icon: <Tv size={48}/> },
     { name: 'CSS3', icon: <Palette size={48}/> },
     { name: 'Tailwind CSS', icon: <Wind size={48}/> },
-    { name: 'Git', icon: <GitBranch size={48}/> },
+    { name: 'Github', icon: <GitBranch size={48}/> },
     { name: 'MongoDB', icon: <Database size={48}/> },
     { name: 'C++', icon: <PenTool size={48}/> },
+    { name: 'JAVA', icon: <PenTool size={48}/> },
     { name: 'AI/ML', icon: <Bot size={48}/> },
 ];
 const aboutText = `A driven Computer Science Engineering student at VIT Chennai, I thrive on architecting solutions that are not only functional but also elegant. My core focus is on transforming complex problems into clean, scalable code and creating web experiences that feel both intuitive and powerful.
