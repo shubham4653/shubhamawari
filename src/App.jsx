@@ -12,7 +12,8 @@ const LeetCodeIcon = () => (
 const projects = [
     { id: 'proj1', title: "portfolio.js", description: "A modern portfolio website built with React, showcasing my projects and skills.Integrated with an AI chatbot to enhance user interaction and support.", link: "https://github.com/shubham4653/shubhamawari" },
     { id: 'proj2', title: "carsonly_website.html", description: "A sleek, static car gallery website built with pure HTML and CSS, focusing on clean UI/UX.", link: "https://github.com/shubham4653/CarsOnly-Website" },
-    { id: 'proj3', title: "the_quest.js", description: "An interactive web-based game showcasing dynamic JavaScript and user interaction.", link: "https://github.com/shubham4653/thequest" },
+    { id: 'proj3', title: "block_shield.js", description: "A blockchain-based, tokenized rate-limiting system that defends servers against bot abuse, spam, and DDoS attacks. Built on Ethereum with integrated AI-enhanced traffic analysis.", link: "https://github.com/shubham4653/vajra" },
+    { id: 'proj4', title: "the_quest.js", description: "An interactive web-based game showcasing dynamic JavaScript and user interaction.", link: "https://github.com/shubham4653/thequest" },
 ];
 
 const skills = [
