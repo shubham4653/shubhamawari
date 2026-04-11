@@ -13,8 +13,9 @@ const PhysicsBackground = () => {
     const WORD_LIST = [
         "React", "Node.js", "MongoDB", "Express",
         "Tailwind", "Framer", "Git", "Java", "Python",
-        "Code", "Design", "Create", "Build"
-    ];
+        "Code", "Design", "Create", "Build", "React",
+        "JavaScript", "TypeScript", "HTML5", "CSS",
+        "C++", "GitHub"];
 
     useEffect(() => {
         const canvas = canvasRef.current;
