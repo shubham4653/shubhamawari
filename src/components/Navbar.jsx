@@ -14,14 +14,8 @@ const Navbar = () => {
     };
     window.addEventListener('scroll', handleScroll);
 
-    // Check system preference or localStorage
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    } else {
-      setIsDark(false);
-      document.documentElement.classList.remove('dark');
-    }
+    // Sync state with current document class
+    setIsDark(document.documentElement.classList.contains('dark'));
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -107,7 +101,7 @@ const Navbar = () => {
               SA
             </div>
             <span className="font-bold text-xl tracking-tight text-slate-800 dark:text-slate-100 hover:text-cyan-500 dark:hover:text-cyan-400 transition-colors">
-              Shubham<span className="text-cyan-500 dark:text-cyan-400">.dev</span>
+              shubhamawari<span className="text-cyan-500 dark:text-cyan-400">.me</span>
             </span>
           </div>
 

@@ -2,19 +2,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
-import thumbPortfolio from '../assets/project_portfolio.png';
+import thumbAura from '../assets/aura_banner.jpg';
 import thumbCars from '../assets/project_cars.png';
 import thumbSecurity from '../assets/project_security.png';
 import thumbGame from '../assets/project_game.png';
 
+import { useNavigate } from 'react-router-dom';
+
 const projects = [
     {
         id: 'proj1',
-        title: "Portfolio Website",
-        description: "A modern portfolio website built with React, showcasing my projects and skills. Integrated with an AI chatbot to enhance user interaction and support.",
-        link: "https://github.com/shubham4653/shubhamawari",
-        tags: ["React", "AI Integration", "Tailwind"],
-        image: thumbPortfolio
+        title: "Aura Health",
+        description: "A production-grade decentralized health ecosystem utilizing blockchain identity and AI-powered analytics to return data ownership to patients.",
+        link: "/aura-health",
+        isInternal: true,
+        tags: ["Blockchain", "AI Analysis", "Web3 Healthcare"],
+        image: thumbAura
     },
     {
         id: 'proj2',
@@ -43,6 +46,16 @@ const projects = [
 ];
 
 const Projects = () => {
+    const navigate = useNavigate();
+
+    const handleProjectClick = (project) => {
+        if (project.isInternal) {
+            navigate(project.link);
+        } else {
+            window.open(project.link, '_blank', 'noopener,noreferrer');
+        }
+    };
+
     return (
         <section id="projects" className="py-20 bg-slate-100 dark:bg-slate-900 transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +75,8 @@ const Projects = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="group relative bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-slate-300 dark:hover:border-slate-600 transition-colors duration-300 flex flex-col shadow-lg"
+                            onClick={() => handleProjectClick(project)}
+                            className="group relative bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl overflow-hidden hover:border-slate-300 dark:hover:border-slate-600 transition-colors duration-300 flex flex-col shadow-lg cursor-pointer"
                         >
 
                             <div className="h-56 bg-slate-200 dark:bg-slate-800 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
@@ -80,24 +94,38 @@ const Projects = () => {
                                         {project.title}
                                     </h3>
                                     <div className="flex gap-2">
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-white transition-colors"
-                                            title="View Information"
-                                        >
-                                            <Github size={20} />
-                                        </a>
-                                        <a
-                                            href={project.link}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-white transition-colors"
-                                            title="Live Demo"
-                                        >
-                                            <ExternalLink size={20} />
-                                        </a>
+                                        {project.isInternal ? (
+                                            <button
+                                                onClick={(e) => { e.stopPropagation(); navigate(project.link); }}
+                                                className="text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-white transition-colors"
+                                                title="View Showcase"
+                                            >
+                                                <ExternalLink size={20} />
+                                            </button>
+                                        ) : (
+                                            <>
+                                                <a
+                                                    href={project.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-white transition-colors"
+                                                    title="View Information"
+                                                >
+                                                    <Github size={20} />
+                                                </a>
+                                                <a
+                                                    href={project.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    onClick={(e) => e.stopPropagation()}
+                                                    className="text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-white transition-colors"
+                                                    title="Live Demo"
+                                                >
+                                                    <ExternalLink size={20} />
+                                                </a>
+                                            </>
+                                        )}
                                     </div>
                                 </div>
 
