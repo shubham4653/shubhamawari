@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Showcase from './components/Showcase';
+import AuraHealth from './components/Projects/AuraHealth_Showcase';
 import PhysicsBackground from './components/PhysicsBackground';
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
                 <PhysicsBackground />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/aura-health" element={<Showcase />} />
+                    <Route path="/aura-health" element={<AuraHealth />} />
                 </Routes>
             </div>
         </Router>

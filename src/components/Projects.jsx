@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
 
 import thumbAura from '../assets/aura_banner.jpg';
+import thumbHashMarket from '../assets/hash_market.jpg';
 import thumbCars from '../assets/project_cars.png';
 import thumbSecurity from '../assets/project_security.png';
 import thumbGame from '../assets/project_game.png';
@@ -21,6 +22,14 @@ const projects = [
     },
     {
         id: 'proj2',
+        title: "Hash Market",
+        description: "A decentralized marketplace for digital assets built on blockchain technology, enabling secure peer-to-peer transactions and ownership verification.",
+        link: "https://hashrate-teal.vercel.app/#",
+        tags: ["Blockchain", "Web3 Marketplace", "Digital Assets"],
+        image: thumbHashMarket
+    },
+    {
+        id: 'proj3',
         title: "CarsOnly Gallery",
         description: "A sleek, static car gallery website built with pure HTML and CSS, focusing on clean UI/UX and responsive design principles.",
         link: "https://github.com/shubham4653/CarsOnly-Website",
@@ -28,7 +37,7 @@ const projects = [
         image: thumbCars
     },
     {
-        id: 'proj3',
+        id: 'proj4',
         title: "Block Shield",
         description: "A blockchain-based, tokenized rate-limiting system that defends servers against bot abuse, spam, and DDoS attacks. Built on Ethereum with integrated AI-enhanced traffic analysis.",
         link: "https://github.com/shubham4653/vajra",
@@ -36,7 +45,7 @@ const projects = [
         image: thumbSecurity
     },
     {
-        id: 'proj4',
+        id: 'proj5',
         title: "The Quest",
         description: "An interactive web-based game showcasing dynamic JavaScript logic, state management, and engaging user interaction patterns.",
         link: "https://github.com/shubham4653/thequest",

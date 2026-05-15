@@ -35,30 +35,30 @@ import { Link } from 'react-router-dom';
 import { flushSync } from 'react-dom';
 
 // Asset Imports - Patient Side
-import pDashboard from '../assets/aura_ss/patient_dashboard.jpg';
-import pWellness from '../assets/aura_ss/patient_wellness_plan.jpg';
-import pSymptom from '../assets/aura_ss/patient_ai_symtom_checker.jpg';
-import pSymptomChat from '../assets/aura_ss/patient_aisymtom_checker_chat.jpg';
-import pAccess from '../assets/aura_ss/patient_record_access_control.jpg';
-import pIntegrity from '../assets/aura_ss/patient_integrity_checker.jpg';
-import pProfile from '../assets/aura_ss/patient_profile.jpg';
-import pProfileEdit from '../assets/aura_ss/patient_profile_edit.jpg';
-import pAppointments from '../assets/aura_ss/patient_appointments.jpg';
-import pApptSchedule from '../assets/aura_ss/patient_appointment_schedule.jpg';
-import pChat from '../assets/aura_ss/patient_chat.jpg';
-import pReportDisplay from '../assets/aura_ss/patient_medical_report_display.jpg';
-import pReportAnalysis from '../assets/aura_ss/patient_report_analysis.jpg';
-import pReportAnalyser from '../assets/aura_ss/patient_ai_report_analyser.jpg';
-import pCarePlan from '../assets/aura_ss/patient_careplan_display.jpg';
-import pLogin from '../assets/aura_ss/patient_login.jpg';
+import pDashboard from '../../assets/aura_ss/patient_dashboard.jpg';
+import pWellness from '../../assets/aura_ss/patient_wellness_plan.jpg';
+import pSymptom from '../../assets/aura_ss/patient_ai_symtom_checker.jpg';
+import pSymptomChat from '../../assets/aura_ss/patient_aisymtom_checker_chat.jpg';
+import pAccess from '../../assets/aura_ss/patient_record_access_control.jpg';
+import pIntegrity from '../../assets/aura_ss/patient_integrity_checker.jpg';
+import pProfile from '../../assets/aura_ss/patient_profile.jpg';
+import pProfileEdit from '../../assets/aura_ss/patient_profile_edit.jpg';
+import pAppointments from '../../assets/aura_ss/patient_appointments.jpg';
+import pApptSchedule from '../../assets/aura_ss/patient_appointment_schedule.jpg';
+import pChat from '../../assets/aura_ss/patient_chat.jpg';
+import pReportDisplay from '../../assets/aura_ss/patient_medical_report_display.jpg';
+import pReportAnalysis from '../../assets/aura_ss/patient_report_analysis.jpg';
+import pReportAnalyser from '../../assets/aura_ss/patient_ai_report_analyser.jpg';
+import pCarePlan from '../../assets/aura_ss/patient_careplan_display.jpg';
+import pLogin from '../../assets/aura_ss/patient_login.jpg';
 
 // Asset Imports - Provider Side
-import vUpload from '../assets/aura_ss/provider_medical_report_upload.jpg';
-import vAppts from '../assets/aura_ss/provider_appointment_display.jpg';
-import vChat from '../assets/aura_ss/provider_chat.jpg';
-import vProfileEdit from '../assets/aura_ss/provider_profile_edit.jpg';
-import vPatientProfile from '../assets/aura_ss/provider_side_patient_profile.jpg';
-import vLogin from '../assets/aura_ss/provider_login.jpg';
+import vUpload from '../../assets/aura_ss/provider_medical_report_upload.jpg';
+import vAppts from '../../assets/aura_ss/provider_appointment_display.jpg';
+import vChat from '../../assets/aura_ss/provider_chat.jpg';
+import vProfileEdit from '../../assets/aura_ss/provider_profile_edit.jpg';
+import vPatientProfile from '../../assets/aura_ss/provider_side_patient_profile.jpg';
+import vLogin from '../../assets/aura_ss/provider_login.jpg';
 
 const Showcase = () => {
   const [userType, setUserType] = useState('patient');
